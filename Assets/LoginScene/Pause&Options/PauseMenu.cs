@@ -40,6 +40,7 @@ public class PauseMenu : MonoBehaviour
         panel.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
+        theme.Play();
     }
 
     public void Pause()
@@ -48,6 +49,7 @@ public class PauseMenu : MonoBehaviour
         panel.SetActive(true);
         Time.timeScale = 0f;
         gameIsPaused = true;
+        theme.Pause();
     }
 
     public void LoadScene()
